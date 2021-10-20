@@ -4,7 +4,10 @@
     <title>Animerch</title>
     <link rel="stylesheet" type="text/CSS" href="{% static 'CSS/Principal.css' %}" media="screen"/>
     <link rel="stylesheet" type="text/CSS" href="{% static 'CSS/merch.css' %}" media="screen"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/CSS" href="{% static 'CSS/foro.css'%}" media="screen">
+	<link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' %">
+    <link rel="preconnect" href="{% static 'https://fonts.gstatic.com'%">
+    <link rel="stylesheet" href="{% static 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'%}" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
     <div class="principal-bar">
@@ -15,10 +18,216 @@
         <li><a href="{% url 'merch'%}">Merch</a></li>
         </ul>
 </div>
-<div class="Body">
+
+<div class="search-box">
+	<div>
+		<select name="" id="">
+			<option value="Everything">Todo</option>
+			<option value="Titles">Mercancia</option>
+			<option value="Descriptions">Problemas del Servicio</option>
+		</select>
+		<input type="text" name="q" placeholder="search ...">
+		<button><i class="fa fa-search"></i></button>
+	</div>
+</div>
+</header>
+<div class="container">
+<div class="subforum">
+	<div class="subforum-title">
+		<h1>Informacion</h1>
+	</div>
+	<div class="subforum-row">
+		<div class="subforum-icon subforum-column center">
+			<i></i>
+		</div>
+		<div class="subforum-description subforum-column">
+			<h4><a href="#">Buena página, sigan así</a></h4>
+			<p>Llevaba tiempo buscando una página como esta donde pueda encontrar mercancía y hablar de temas de interés con otras personas, por cierto, ¿cuándo llegan las dakimakuras?</p>
+		</div>
+		<div class="subforum-stats subforum-column center">
+			<span>2 Publicaciones | 1 Topics</span>
+		</div>
+		<div class="subforum-info subforum-column">
+			<b><a href="">Ultima Publicacion</a></b> by <a href="">JoJo El Patron</a> 
+			<br>el <small>01 Abr 2021</small>
+		</div>
+	</div>
+</div>
+<!--More-->
+
+<div class="subforum">
+	<div class="subforum-title">
+		<h1>Mercancia</h1>
+	</div>
+	<div class="subforum-row">
+		<div class="subforum-icon subforum-column center">
+	
+		</div>
+		<div class="subforum-description subforum-column">
+			<h4><a href="#">No me convence el nendoroid de One piezzzzzzzz</a></h4>
+			<p>No me convence mucho el diseño del nendoroid de sanji mejor esperare a que lleguen más diseños.</p>
+		</div>
+		<div class="subforum-stats subforum-column center">
+			<span>12 Publicaciones | 3 Topics</span>
+		</div>
+		<div class="subforum-info subforum-column">
+			<b><a href="">Ultima Publicacion</a></b> by <a href="">JoJo El Patron</a> 
+			<br>el <small>01 Abr 2021</small>
+		</div>
+	</div>
+	<hr class="subforum-devider">
+	<div class="subforum-row">
+		<div class="subforum-icon subforum-column center">
+			<i></i>
+		</div>
+		<div class="subforum-description subforum-column">
+			<h4><a href="#">Amaterasu!!!!!!!!</a></h4>
+			<p>Me encanta el buzo de akatsuki es tan cómodo y cálido que hare sentir el verdadero dolor al frío</p>
+		</div>
+		<div class="subforum-stats subforum-column center">
+			<span>56 Publicaciones | 1 Topics</span>
+		</div>
+		<div class="subforum-info subforum-column">
+			<b><a href="">Ultima Publicacion</a></b> by <a href="">JoJo El Patron</a> 
+			<br>el <small>01 Abr 2021</small>
+		</div>
+	</div>
+	<hr class="subforum-devider">
+	<div class="subforum-row">
+		<div class="subforum-icon subforum-column center">
+			<i></i>
+		</div>
+		<div class="subforum-description subforum-column">
+			<h4><a href="#">No era lo que esperaba, pero estoy satisfecho</a></h4>
+			<p>Pedí la figura de miku a pesar de su elevado precio, pero no era tan detallada como esperaba, aun así me encanta</p>
+		</div>
+		<div class="subforum-stats subforum-column center">
+			<span>20 Publicaciones | 6 Topics</span>
+		</div>
+		<div class="subforum-info subforum-column">
+			<b><a href="">Ultima Publicacion</a></b> by <a href="">JoJo El Patron</a> 
+			<br>el <small>01 Abr 2021</small>
+		</div>
+	</div>
+	<hr class="subforum-devider">
+	<div class="subforum-row">
+		<div class="subforum-icon subforum-column center">
+			<i></i>
+		</div>
+		<div class="subforum-description subforum-column">
+			<h4><a href="#">Nigerundayoooooo</a></h4>
+			<p>Por fin encontré una figura del besto JOJO, ya la pedí estoy esperando a que llegue</p>
+		</div>
+		<div class="subforum-stats subforum-column center">
+			<span> 4 Publicaciones | 2 Topics</span>
+		</div>
+		<div class="subforum-info subforum-column">
+			<b><a href="">Ultima Publicacion</a></b> by <a href="">JoJo El Patron</a> 
+			<br>el <small>01 Abr 2021</small>
+		</div>
+	</div>
+	<hr class="subforum-devider">
+	<div class="subforum-row">
+		<div class="subforum-icon subforum-column center">
+			<i></i>
+		</div>
+		<div class="subforum-description subforum-column">
+			<h4><a href="#">Por finnnnnn</a></h4>
+			<p>Por fin tengo a shinobu, llevaba tiempo buscándola para mi colección, ahora ya tengo a la santa trinidad junto a hachikuji y ononoki.</p>
+		</div>
+		<div class="subforum-stats subforum-column center">
+			<span> 35 Posts | 1 Topics</span>
+		</div>
+		<div class="subforum-info subforum-column">
+			<b><a href="">Ultima Publicacion</a></b> by <a href="">JoJo El Patron</a> 
+			<br>el <small>01 Abr 2021</small>
+		</div>
+	</div>
+</div>
+
+<div class="subforum">
+	<div class="subforum-title">
+		<h1>Problemas del Servicio</h1>
+	</div>
+	<div class="subforum-row">
+		<div class="subforum-icon subforum-column center">
+			<i"></i>
+		</div>
+		<div class="subforum-description subforum-column">
+			<h4><a href="#">¿Saben cuánto duran los envíos?</a></h4>
+			<p>Hace poco conocí la página, pero no veo por ninguna parte cuanto tardan los envíos, vivo un poco alejado de la capital así que estoy preocupado por ello.</p>
+		</div>
+		<div class="subforum-stats subforum-column center">
+			<span>24 Publicaciones| 12 Topics</span>
+		</div>
+		<div class="subforum-info subforum-column">
+			<b><a href="">Ultima Publicacion</a></b> by <a href="">JoJo El Patron</a> 
+			<br>el <small>01 Abr 2021</small>
+		</div>
+	</div>
+	<hr class="subforum-devider">
+	<div class="subforum-row">
+		<div class="subforum-icon subforum-column center">
+			<i></i>
+		</div>
+		<div class="subforum-description subforum-column">
+			<h4><a href="#">¿Tienen alguna sucursal o tienda física?</a></h4>
+			<p>Me interesan mucho los productos que ofrecen, pero no confío mucho en las compras online, así que me gustaría conseguir los productos en personas.</p>
+		</div>
+		<div class="subforum-stats subforum-column center">
+			<span>13 Publicaciones | 5 Topics</span>
+		</div>
+		<div class="subforum-info subforum-column">
+			<b><a href="">Ultima Publicacion</a></b> by <a href="">JoJo El Patron</a> 
+			<br>el <small>01 Abr 2021</small>
+		</div>
+	</div>
+	<hr class="subforum-devider">
+	<div class="subforum-row">
+		<div class="subforum-icon subforum-column center">
+			<i></i>
+		</div>
+		<div class="subforum-description subforum-column">
+			<h4><a href="#">¿Cuándo les llega algún manga BL?</a></h4>
+			<p>Estuve viendo en su página principal que piensan en empezar a vender manga con títulos como chainsaw man y OPM, así que estaba esperanzada en que podrían llegar a vender BL</p>
+		</div>
+		<div class="subforum-stats subforum-column center">
+			<span>54 Publicaciones | 9 Topics</span>
+		</div>
+		<div class="subforum-info subforum-column">
+			<b><a href="">Ultima Publicacion</a></b> by <a href="">JoJo El Patron</a> 
+			<br>el <small>01 Abr 2021</small>
+		</div>
+	</div>
+	<hr class="subforum-devider">
+	<div class="subforum-row">
+		<div class="subforum-icon subforum-column center">
+			<i></i>
+		</div>
+		<div class="subforum-description subforum-column">
+			<h4><a href="#">Ayuuudaaa</a></h4>
+			<p>Acabo de hacer la transacción con tarjeta y me descontaron el dinero de la compra, pero el pedido aún no aparece ☹</p>
+		</div>
+		<div class="subforum-stats subforum-column center">
+			<span>7 Publicaciones | 10 Topics</span>
+		</div>
+		<div class="subforum-info subforum-column">
+			<b><a href="">Ultima Publicacion</a></b> by <a href="">JoJo El Patron</a> 
+			<br>el <small>01 Abr 2021</small>
+		</div>
+	</div>
+
+   
+</div>
+<!---->
+</div>
+
+<!-- Forum Info -->
+
 
 </div>
 </body>
+
 <footer id="uwu">
 	<div class="container-footer-all">
 	<div class="container-body">
