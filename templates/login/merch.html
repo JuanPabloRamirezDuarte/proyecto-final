@@ -1,0 +1,331 @@
+{% load static %}
+<html>
+    <head>
+        <title>Animerch</title>
+        </style>
+        <link rel="stylesheet" type="text/CSS"href="{% static 'CSS/Principal.css'%}" media="screen"/>
+       <link rel="stylesheet" type="text/CSS" href="{% static 'CSS/merch.css'%}" media="screen"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+   </head>
+   <body>
+       <div class="principal-bar">
+           <img src="{% static 'Imagenes/animerch.png'%}" id="Animerch">
+           <h1>AniMerch</h1><br><br>
+           <ul class="nav">
+            <li><a href="{% url 'index' %}" class="navbutton">Home</a></li>
+            <li><a href="{% url 'comunidad'%}" class="navbutton">Comunidad</a></li>
+           </ul>
+        </div>
+      <div class="body">
+          <section class="store">  
+              <div class="container">
+                  <div class="items">
+                      <br>
+                      <table style="width: 45cm">
+                        <tr>
+                      <td>
+                      <div class="rowC">
+                          <div class="col-12 col-md-6">
+                              <div class="item shadow mb-4">
+                                  <h3 class="item-title">Figura Sanji [25 cm] One piece</h3>
+                                  <img class="item-image" src="{% static 'Imagenes/funko-pop-sabo-one-piece.jpg'%}">
+      
+                                  <div class="item-details">
+                                      <h4 class="item-price">$200.000 pesos</h4>
+                                      <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                                  </div>
+                              </div>
+                          </div>
+                          </div>
+                      </td>
+                      
+                      <td>
+                      <div class="rowC">
+                          <div class="col-12 col-md-6">
+                              <div class="item shadow mb-4">
+                                  <h3 class="item-title">Figura Nezuko [32 cm] Kimetus No Yaiba</h3>
+      
+                                  <img class="item-image" src="{% static 'Imagenes/nezuko.jpg'%}">
+      
+                                  <div class="item-details">
+                                      <h4 class="item-price">$400.000 pesos</h4>
+                                      <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      </td>
+                      
+                      <td>
+                      <div class="rowC">
+                          <div class="col-12 col-md-6">
+                              <div class="item shadow mb-4">
+                                  <h3 class="item-title">Forro para celular HxH </h3>
+      
+                                  <img class="item-image" src="{% static 'Imagenes/forro.jpg'%}">
+      
+                                  <div class="item-details">
+                                      <h4 class="item-price">$15.000 pesos</h4>
+                                      <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </td>
+                  </tr>
+  
+                  <tr>
+                      <td>
+                      <div class="rowC">
+                          <div class="col-12 col-md-6">
+                              <div class="item shadow mb-4">
+                                  <h3 class="item-title">Figura Hatsune Miku [30 cm] Original</h3>
+      
+                                  <img class="item-image" src="{% static 'Imagenes/miku.jpg'%}">
+      
+                                  <div class="item-details">
+                                      <h4 class="item-price">$489.000 pesos</h4>
+                                      <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </td>
+  
+                      <td>
+                      <div class="rowC">
+                          <div class="col-12 col-md-6">
+                              <div class="item shadow mb-4">
+                                  <h3 class="item-title">Buzo Akatsuki Talla S</h3>
+      
+                                  <img class="item-image" src="{% static 'Imagenes/buso.jpg'%}">
+                                  <div class="item-details">
+                                      <h4 class="item-price">$80.000 pesos</h4>
+                                      <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                    </td>
+              
+  
+                      <td>
+                      <div class="rowC">
+                          <div class="col-12 col-md-6">
+                              <div class="item shadow mb-4">
+                                  <h3 class="item-title">Figura Neroroid Kenji Akashi Haiykuu</h3>
+      
+                                  <img class="item-image" src="{% static 'Imagenes/figura.jpg'%}">
+                                  <div class="item-details">
+                                      <h4 class="item-price">$120.000 pesos</h4>
+                                      <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </td>
+              </tr>
+  
+              <tr> 
+                  <td>
+                      <div class="rowC">
+                          <div class="col-12 col-md-6">
+                              <div class="item shadow mb-4">
+                                  <h3 class="item-title">Figura Joseph Joestar [33 cm] JoJos</h3>
+      
+                                  <img class="item-image" src="{% static 'Imagenes/josephsas.jpg'%}">
+                                  <div class="item-details">
+                                      <h4 class="item-price">$290.000 pesos</h4>
+                                      <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </td>
+                  <td>
+                      <div class="rowC">
+                          <div class="col-12 col-md-6">
+                              <div class="item shadow mb-4">
+                                  <h3 class="item-title">Figura Shinobu [29 cm] Monogatari</h3>
+      
+                                  <img class="item-image" src="{% static 'Imagenes/shinobu.jpg'%}">
+                                  <div class="item-details">
+                                      <h4 class="item-price">$350.000 pesos</h4>
+                                      <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </td>
+              </tr>
+                  </table>
+                  </div>
+              </div>
+          </section>
+          
+            </div>
+            
+            <section class="shopping-cart">
+                <div class="container">
+                    <h1 class="text-center">CARRITO</h1>
+                    <hr>
+                    <div class="rowC">
+                        <div class="col-6">
+                            <div class="shopping-cart-header">
+                                <h6>Producto</h6>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="shopping-cart-header">
+                                <h6 class="text-truncate">Precio</h6>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="shopping-cart-header">
+                                <h6>Cantidad</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ? START SHOPPING CART ITEMS -->
+                    <div class="shopping-cart-items shoppingCartItemsContainer">
+                    </div>
+                    <!-- ? END SHOPPING CART ITEMS -->
+        
+                    <!-- START TOTAL -->
+                    <div class="rowC">
+                        <div class="col-12">
+                            <div class="shopping-cart-total d-flex align-items-center">
+                                <p class="mb-0">Total</p>
+                                <p class="ml-4 mb-0 shoppingCartTotal">0$</p>
+                                <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                                    data-delay="2000">
+                                    <div class="toast-header">
+                                        <span>✅</span>
+                                        <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                                        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="toast-body text-white">
+                                        Se aumentó correctamente la cantidad
+                                    </div>
+                                </div>
+                                <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                                    data-target="#comprarModal">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- END TOTAL -->
+        
+                    <!-- START MODAL COMPRA -->
+                    <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Pronto recibirá su pedido</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END MODAL COMPRA -->
+        
+        
+                </div>
+        
+            </section>
+            <!-- END SECTION SHOPPING CART -->
+        
+        </div>
+     
+   
+   <footer id="uwu">
+       <div class="container-footer-all">
+       <div class="container-body">
+           <div class= "colum1" >
+            <h1 class="footerbutton">Informacion de la pagina</h1>
+            <p class="footerbutton">
+            Pagina de compra de articulos de anime, especializado en ofrecer los mejores articulos japones 
+            con variedad de precios negociables, muchas ofertas, increibles estrenos y muchas mas opciones 
+            que busquen al instante. Trabajamos desde 2021 para JoJos Corp ©
+            </p>
+           </div>
+            <div class= "colum2">
+                <h1 class="footerbutton">Redes Sociales</h1>
+                <div class="row">
+                <img src="{% static 'Imagenes/facebook.png'%}">
+                <label>Siguenos en Facebook</label>
+                </div>
+                <div class="row">
+                <img src="{% static 'Imagenes/twitter.png'%}">
+                <label>Siguenos en Twitter</label>
+                </div>
+                <div class="row">
+                <img src="{% static 'Imagenes/instagram.png'%}">
+                <label>Siguenos en Instagram</label>
+                </div>
+                <div class="row">
+                <img src="{% static 'Imagenes/pinteress.png'%}">
+                <label>Siguenos en Pinteress</label>
+                </div>
+                </div>
+            <div class="colum3">
+                <h1 class="footerbutton">Informacion y Contactos</h1>
+                <div class="row2">
+                    <img src="{% static 'Imagenes/home.png'%}">
+                    <label>Bucaramanga,Colombia
+                    Solo trabajos por pagina web.
+                    </label>
+                </div>
+                <div class="row2">
+                    <img src="{% static 'Imagenes/telefono.jpg'%}">
+                    <label>+57(320)-243-4852</label>
+                </div>
+                <div class="row2">
+                    <img src="{% static 'Imagenes/buzon.png'%}">
+                    <label>animerchventas@gmail.com</label>
+                </div>
+
+            </div>
+       </div>
+    </div>
+    <div class="container-footer">
+        <div class="footer">
+        <div class="copyright">
+         © Todos los derechos reservados | <a href="">JoJos Corp</a>
+        </div>
+        <div class="information">
+            <a href="">Informacion Pagina </a> | 
+            <a href="">Politica y Servicio</a> | 
+            <a href="">Terminos y Condiciones</a>
+        </div>
+       </div>
+    </div>
+    </div>   
+   </footer>
+
+   <!-- SCRIPTS -->
+   <script src="{% static 'lib/jquery-3.5.1.slim.min.js'%}"
+   integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+   crossorigin="anonymous"></script>
+<script src="{% static 'https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'%}"
+   integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+   crossorigin="anonymous"></script>
+<script src="{% static 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js'%}"
+   integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+   crossorigin="anonymous"></script>
+
+<script src="{% static 'JS/merch.js'%}"></script>
+
+   </body>                
+   </html>

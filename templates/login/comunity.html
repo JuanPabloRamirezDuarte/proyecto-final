@@ -1,0 +1,88 @@
+{% load static %}
+<html>
+<head>
+    <title>Animerch</title>
+    <link rel="stylesheet" type="text/CSS" href="{% static 'CSS/Principal.css' %}" media="screen"/>
+    <link rel="stylesheet" type="text/CSS" href="{% static 'CSS/merch.css' %}" media="screen"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+    <div class="principal-bar">
+    <img src="{% static 'Imagenes/animerch.png'%}" id="Animerch">
+    <h1>AniMerch</h1><br></br>
+    <ul class="nav">
+        <li><a href="{% url 'index'%}">Home</a></li>
+        <li><a href="{% url 'merch'%}">Merch</a></li>
+        </ul>
+</div>
+<div class="Body">
+
+</div>
+</body>
+<footer id="uwu">
+	<div class="container-footer-all">
+	<div class="container-body">
+		<div class= "colum1" >
+		 <h1 class="footerbutton">Informacion de la pagina</h1>
+		 <p class="footerbutton">
+		 Pagina de compra de articulos de anime, especializado en ofrecer los mejores articulos japones 
+		 con variedad de precios negociables, muchas ofertas, increibles estrenos y muchas mas opciones 
+		 que busquen al instante. Trabajamos desde 2021 para JoJos Corp ©
+		 </p>
+		</div>
+		 <div class= "colum2">
+			 <h1 class="footerbutton">Redes Sociales</h1>
+			 <div class="row">
+			 <img src="{% static 'Imagenes/facebook.png'%}">
+			 <label>Siguenos en Facebook</label>
+			 </div>
+			 <div class="row">
+			 <img src="{% static 'Imagenes/twitter.png'%}">
+			 <label>Siguenos en Twitter</label>
+			 </div>
+			 <div class="row">
+			 <img src="{% static 'Imagenes/instagram.png'%}">
+			 <label>Siguenos en Instagram</label>
+			 </div>
+			 <div class="row">
+			 <img src="{% static 'Imagenes/pinteress.png'%}">
+			 <label>Siguenos en Pinteress</label>
+			 </div>
+			 </div>
+		 <div class="colum3">
+			 <h1 class="footerbutton">Informacion y Contactos</h1>
+			 <div class="row2">
+				 <img src="{% static 'Imagenes/home.png'%}">
+				 <label>Bucaramanga,Colombia
+				 Solo trabajos por pagina web.
+				 </label>
+			 </div>
+			 <div class="row2">
+				 <img src="{% static 'Imagenes/telefono.jpg'%}">
+				 <label>+57(320)-243-4852</label>
+			 </div>
+			 <div class="row2">
+				 <img src="{% static 'Imagenes/buzon.png'%}">
+				 <label>animerchventas@gmail.com</label>
+			 </div>
+
+		 </div>
+	</div>
+ </div>
+ <div class="container-footer">
+	 <div class="footer">
+	 <div class="copyright">
+	  © Todos los derechos reservados | <a href="">JoJos Corp</a>
+	 </div>
+	 <div class="information">
+		 <a href="">Informacion Pagina </a> | 
+		 <a href="">Politica y Servicio</a> | 
+		 <a href="">Terminos y Condiciones</a>
+	 </div>
+	</div>
+ </div>
+ </div>   
+</footer>
+
+
+</html>

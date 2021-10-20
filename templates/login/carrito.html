@@ -1,0 +1,174 @@
+<html>
+<head>
+    <title>Animerch</title>
+    <link rel="stylesheet" type="text/CSS" href="CSS/Principal.css" media="screen"/>
+    <link rel="stylesheet" type="text/CSS" href="CSS/merch.css" media="screen"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+    <div class="principal-bar">
+    <img src="Imagenes/animerch.png" id="Animerch">
+    <h1>ANIMERCH</h1>
+    <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="merch.html">Merch</a></li>
+        <li><a href="comunity.html">Comunidad</a></li>
+        <li><a href="login.html">Login</a></li>
+        </ul>
+</div>
+<div class="Body">
+	<main>
+        <div class="container">
+            <div class="row mt-3">
+                <div class="col">
+                    <h2 class="d-flex justify-content-center mb-3">Realizar Compra</h2>
+                    <form id="procesar-pago" action="#" method="post">
+                        <div class="form-group row">
+                            <label for="cliente" class="col-12 col-md-2 col-form-label h2">Cliente :</label>
+                            <div class="col-12 col-md-10">
+                                <input type="text" class="form-control" id="cliente"
+                                    placeholder="Ingresa nombre cliente" name="destinatario">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="email" class="col-12 col-md-2 col-form-label h2">Correo :</label>
+                            <div class="col-12 col-md-10">
+                                <input type="text" class="form-control" id="correo" placeholder="Ingresa tu correo" name="cc_to">
+                            </div>
+                        </div>
+
+                        <div id="carrito" class="form-group table-responsive" >
+                            <table class="table" id="lista-compra" >
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Imagen</th>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Precio</th>
+                                        <th scope="col">Cantidad</th>
+                                        <th scope="col">Sub Total</th>
+                                        <th scope="col">Eliminar</th>
+                                    </tr>
+
+                                </thead>
+                                <tbody >
+
+                                </tbody>
+                                <tr>
+                                    <th colspan="4" scope="col" class="text-right">SUB TOTAL :</th>
+                                    <th scope="col">
+                                        <p id="subtotal"></p>
+                                    </th>
+                                    <!-- <th scope="col"></th> -->
+                                </tr>
+                                <tr>
+                                    <th colspan="4" scope="col" class="text-right">IGV :</th>
+                                    <th scope="col">
+                                        <p id="igv"></p>
+                                    </th>
+                                    <!-- <th scope="col"></th> -->
+                                </tr>
+                                <tr>
+                                    <th colspan="4" scope="col" class="text-right">TOTAL :</th>
+                                    <th scope="col">
+                                        <input id="total" name="monto" class="font-weight-bold border-0" readonly style="background-color: white;"></input>
+                                    </th>
+                                    <!-- <th scope="col"></th> -->
+                                </tr>
+
+                            </table>
+                        </div>
+
+                        <div class="row justify-content-center" id="loaders">
+                            <img id="cargando" src="img/cargando.gif" width="220">
+                        </div>
+
+                        <div class="row justify-content-between">
+                            <div class="col-md-4 mb-2">
+                                <a href="index.html" class="btn btn-info btn-block">Seguir comprando</a>
+                            </div>
+                            <div class="col-xs-12 col-md-4">
+                                <button href="#" class="btn btn-success btn-block" id="procesar-compra">Realizar compra</button>
+                            </div>
+                        </div>
+                    </form>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </main>
+
+</div>
+</body>
+
+
+<footer id="uwu">
+	<div class="container-footer-all">
+	<div class="container-body">
+		<div class= "colum1" >
+		 <h1 class="footerbutton">Informacion de la pagina</h1>
+		 <p class="footerbutton">
+		 Pagina de compra de articulos de anime, especializado en ofrecer los mejores articulos japones 
+		 con variedad de precios negociables, muchas ofertas, increibles estrenos y muchas mas opciones 
+		 que busquen al instante. Trabajamos desde 2021 para JoJos Corp ©
+		 </p>
+		</div>
+		 <div class= "colum2">
+			 <h1 class="footerbutton">Redes Sociales</h1>
+			 <div class="row">
+			 <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png">
+			 <label>Siguenos en Facebook</label>
+			 </div>
+			 <div class="row">
+			 <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png">
+			 <label>Siguenos en Twitter</label>
+			 </div>
+			 <div class="row">
+			 <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png">
+			 <label>Siguenos en Instagram</label>
+			 </div>
+			 <div class="row">
+			 <img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c52e.png">
+			 <label>Siguenos en Pinteress</label>
+			 </div>
+			 </div>
+		 <div class="colum3">
+			 <h1 class="footerbutton">Informacion y Contactos</h1>
+			 <div class="row2">
+				 <img src="https://w1.pngwing.com/pngs/594/428/png-transparent-desktop-icon-house-building-apartment-symbol-home-share-icon-black.png">
+				 <label>Bucaramanga,Colombia
+				 Solo trabajos por pagina web.
+				 </label>
+			 </div>
+			 <div class="row2">
+				 <img src="https://thumbs.dreamstime.com/b/icono-de-internet-m%C3%B3vil-del-vector-dise%C3%B1o-gr%C3%A1fico-calidad-superior-se%C3%B1ales-modernas-colecci%C3%B3n-s%C3%ADmbolos-contorno-conjunto-172549039.jpg">
+				 <label>+57(320)-243-4852</label>
+			 </div>
+			 <div class="row2">
+				 <img src="data:image/png;base64,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">
+				 <label>animerchventas@gmail.com</label>
+			 </div>
+
+		 </div>
+	</div>
+ </div>
+ <div class="container-footer">
+	 <div class="footer">
+	 <div class="copyright">
+	  © Todos los derechos reservados | <a href="">JoJos Corp</a>
+	 </div>
+	 <div class="information">
+		 <a href="">Informacion Pagina </a> | 
+		 <a href="">Politica y Servicio</a> | 
+		 <a href="">Terminos y Condiciones</a>
+	 </div>
+	</div>
+ </div>
+ </div>   
+</footer>>
+
+
+</html>
